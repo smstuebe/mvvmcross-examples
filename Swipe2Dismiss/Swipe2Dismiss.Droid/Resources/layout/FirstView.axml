@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MvvmCross.Droid.Support.V7.RecyclerView.MvxRecyclerView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:local="http://schemas.android.com/apk/res-auto"
+  android:id="@+id/recyclerView"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  local:MvxBind="ItemsSource MyItems"
+  local:MvxItemTemplate="@layout/item">
+</MvvmCross.Droid.Support.V7.RecyclerView.MvxRecyclerView>
+
+
