@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#00c7ff"
+    android:padding="5dp">
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:gravity="center_vertical"
+      local:MvxBind="Text Name, Converter=Format, ConverterParameter='I am the adult {0}'"/>
+
+</LinearLayout>

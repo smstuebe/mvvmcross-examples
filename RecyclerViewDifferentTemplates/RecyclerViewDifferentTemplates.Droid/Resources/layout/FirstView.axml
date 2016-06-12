@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+    <Button
+      android:id="@+id/btnType"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="0.5" 
+      android:text="Type"/>
+    <Button
+      android:id="@+id/btnAge"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="0.5"
+      android:text="Age"/>
+  </LinearLayout>
+  <MvvmCross.Droid.Support.V7.RecyclerView.MvxRecyclerView
+    android:id="@+id/recyclerView"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    local:MvxBind="ItemsSource Pets"
+    local:MvxTemplateSelector="RecyclerViewDifferentTemplates.Droid.TypeTemplateSelector,RecyclerViewDifferentTemplates.Droid">
+  </MvvmCross.Droid.Support.V7.RecyclerView.MvxRecyclerView>
+</LinearLayout>
